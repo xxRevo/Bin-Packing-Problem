@@ -1,9 +1,11 @@
 import random
 import copy
 import sys
+import time
 
 #brute force algorithm
 def brute_force_algorithm(B,U_initial):
+    start_time = time.time()
     U = U_initial.copy()
     k = [] #initializing the bin array
     while(len(U) != 0):
@@ -22,9 +24,11 @@ def brute_force_algorithm(B,U_initial):
             else:
                 U.pop(best_index)
                 k[-1] = best_gap
-    return (len(k))
+    elapsed_time = (time.time() - start_time) * 1000
+    return (len(k)),elapsed_time
 
 def heuristic_algorithm(B,U_initial):
+    start_time = time.time()
     U = U_initial.copy()
     k = []
     k.append(B)
@@ -39,7 +43,8 @@ def heuristic_algorithm(B,U_initial):
         if (could_not_bin):
             k.append(B-U[0])
             U.pop(0)
-    return (len(k))
+    elapsed_time = (time.time() - start_time) * 1000
+    return (len(k)), elapsed_time
 
 #random input generator
 def random_input_generator(n,B):
@@ -52,15 +57,29 @@ def random_input_generator(n,B):
 
 sys.stdout = open('output.txt', 'w')
 run_number = 20
+division_number = run_number
+difference_total = 0
+time_difference = 0
 for x in range(run_number):
-    B = random.randint(50,100)
-    n = random.randint(50,100)
+    B = random.randint(50,1000)
+    n = random.randint(50,1000)
     U_initial = random_input_generator(n,B)
-    b_result_bin = brute_force_algorithm(B,U_initial)
-    h_result_bin = heuristic_algorithm(B,U_initial)
+    b_result_bin, b_result_time = brute_force_algorithm(B,U_initial)
+    h_result_bin, h_result_time = heuristic_algorithm(B,U_initial)
     print("RUN NUMBER:", x+1, "THE RESULT IS AS FOLLOWING:")
     print("Given",n, "items in U and bins with capacity B of", B)
-    print("Brute force algorithm managed to pack input into", b_result_bin ,"bins." )
-    print("Heuristic algorithm managed to pack input into", h_result_bin ,"bins." )
+    print("Brute force algorithm managed to pack input into", b_result_bin ,"bins in ",b_result_time, "miliseconds.")
+    print("Heuristic algorithm managed to pack input into", h_result_bin ,"bins in ",h_result_time, "miliseconds.")
     print("\n")
+    if(h_result_time == 0 or b_result_time == 0):
+        division_number = division_number - 1
+    else:
+        time_difference = time_difference + (1- (h_result_time/b_result_time))
+    difference_total = difference_total + (1- (b_result_bin/h_result_bin))
+difference_total = difference_total/division_number
+time_difference = time_difference/division_number
+bin_efficiency = int((str(difference_total).split(".")[1])[:2])
+time_efficiency = int((str(time_difference).split(".")[1])[:2])
+print("In terms of achieving optimal number of bins; on average, brute force algorithm was %",bin_efficiency,"more efficient than heuristic algorithm.")
+print("In terms of achieving optimal time to execute the algorithm; on average, heuristics algorithm was %",time_efficiency,"more efficient than brute force algorithm.")
 sys.stdout.close()

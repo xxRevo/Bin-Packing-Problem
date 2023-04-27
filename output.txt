@@ -1,120 +1,122 @@
 RUN NUMBER: 1 THE RESULT IS AS FOLLOWING:
-Given 50 items in U and bins with capacity B of 56
-Brute force algorithm managed to pack input into 34 bins.
-Heuristic algorithm managed to pack input into 34 bins.
+Given 298 items in U and bins with capacity B of 70
+Brute force algorithm managed to pack input into 172 bins in  2.99072265625 miliseconds.
+Heuristic algorithm managed to pack input into 175 bins in  1.9953250885009766 miliseconds.
 
 
 RUN NUMBER: 2 THE RESULT IS AS FOLLOWING:
-Given 99 items in U and bins with capacity B of 99
-Brute force algorithm managed to pack input into 54 bins.
-Heuristic algorithm managed to pack input into 57 bins.
+Given 714 items in U and bins with capacity B of 460
+Brute force algorithm managed to pack input into 368 bins in  21.94070816040039 miliseconds.
+Heuristic algorithm managed to pack input into 383 bins in  4.987239837646484 miliseconds.
 
 
 RUN NUMBER: 3 THE RESULT IS AS FOLLOWING:
-Given 95 items in U and bins with capacity B of 65
-Brute force algorithm managed to pack input into 54 bins.
-Heuristic algorithm managed to pack input into 55 bins.
+Given 124 items in U and bins with capacity B of 970
+Brute force algorithm managed to pack input into 61 bins in  0.9968280792236328 miliseconds.
+Heuristic algorithm managed to pack input into 63 bins in  0.0 miliseconds.
 
 
 RUN NUMBER: 4 THE RESULT IS AS FOLLOWING:
-Given 84 items in U and bins with capacity B of 85
-Brute force algorithm managed to pack input into 46 bins.
-Heuristic algorithm managed to pack input into 47 bins.
+Given 251 items in U and bins with capacity B of 315
+Brute force algorithm managed to pack input into 125 bins in  1.9953250885009766 miliseconds.
+Heuristic algorithm managed to pack input into 130 bins in  0.9968280792236328 miliseconds.
 
 
 RUN NUMBER: 5 THE RESULT IS AS FOLLOWING:
-Given 53 items in U and bins with capacity B of 55
-Brute force algorithm managed to pack input into 30 bins.
-Heuristic algorithm managed to pack input into 29 bins.
+Given 685 items in U and bins with capacity B of 603
+Brute force algorithm managed to pack input into 364 bins in  17.952442169189453 miliseconds.
+Heuristic algorithm managed to pack input into 380 bins in  3.988027572631836 miliseconds.
 
 
 RUN NUMBER: 6 THE RESULT IS AS FOLLOWING:
-Given 71 items in U and bins with capacity B of 71
-Brute force algorithm managed to pack input into 34 bins.
-Heuristic algorithm managed to pack input into 35 bins.
+Given 216 items in U and bins with capacity B of 774
+Brute force algorithm managed to pack input into 121 bins in  1.9965171813964844 miliseconds.
+Heuristic algorithm managed to pack input into 127 bins in  0.9963512420654297 miliseconds.
 
 
 RUN NUMBER: 7 THE RESULT IS AS FOLLOWING:
-Given 90 items in U and bins with capacity B of 85
-Brute force algorithm managed to pack input into 40 bins.
-Heuristic algorithm managed to pack input into 41 bins.
+Given 827 items in U and bins with capacity B of 864
+Brute force algorithm managed to pack input into 420 bins in  23.93651008605957 miliseconds.
+Heuristic algorithm managed to pack input into 437 bins in  7.977962493896484 miliseconds.
 
 
 RUN NUMBER: 8 THE RESULT IS AS FOLLOWING:
-Given 85 items in U and bins with capacity B of 51
-Brute force algorithm managed to pack input into 51 bins.
-Heuristic algorithm managed to pack input into 53 bins.
+Given 844 items in U and bins with capacity B of 198
+Brute force algorithm managed to pack input into 421 bins in  30.918359756469727 miliseconds.
+Heuristic algorithm managed to pack input into 436 bins in  6.980657577514648 miliseconds.
 
 
 RUN NUMBER: 9 THE RESULT IS AS FOLLOWING:
-Given 63 items in U and bins with capacity B of 71
-Brute force algorithm managed to pack input into 35 bins.
-Heuristic algorithm managed to pack input into 36 bins.
+Given 307 items in U and bins with capacity B of 961
+Brute force algorithm managed to pack input into 152 bins in  2.990245819091797 miliseconds.
+Heuristic algorithm managed to pack input into 161 bins in  1.9960403442382812 miliseconds.
 
 
 RUN NUMBER: 10 THE RESULT IS AS FOLLOWING:
-Given 82 items in U and bins with capacity B of 65
-Brute force algorithm managed to pack input into 54 bins.
-Heuristic algorithm managed to pack input into 54 bins.
+Given 997 items in U and bins with capacity B of 146
+Brute force algorithm managed to pack input into 514 bins in  31.91351890563965 miliseconds.
+Heuristic algorithm managed to pack input into 532 bins in  9.973287582397461 miliseconds.
 
 
 RUN NUMBER: 11 THE RESULT IS AS FOLLOWING:
-Given 85 items in U and bins with capacity B of 99
-Brute force algorithm managed to pack input into 40 bins.
-Heuristic algorithm managed to pack input into 42 bins.
+Given 503 items in U and bins with capacity B of 934
+Brute force algorithm managed to pack input into 263 bins in  8.976221084594727 miliseconds.
+Heuristic algorithm managed to pack input into 274 bins in  2.992391586303711 miliseconds.
 
 
 RUN NUMBER: 12 THE RESULT IS AS FOLLOWING:
-Given 80 items in U and bins with capacity B of 61
-Brute force algorithm managed to pack input into 47 bins.
-Heuristic algorithm managed to pack input into 48 bins.
+Given 339 items in U and bins with capacity B of 593
+Brute force algorithm managed to pack input into 170 bins in  2.9914379119873047 miliseconds.
+Heuristic algorithm managed to pack input into 177 bins in  0.9973049163818359 miliseconds.
 
 
 RUN NUMBER: 13 THE RESULT IS AS FOLLOWING:
-Given 99 items in U and bins with capacity B of 93
-Brute force algorithm managed to pack input into 53 bins.
-Heuristic algorithm managed to pack input into 55 bins.
+Given 275 items in U and bins with capacity B of 250
+Brute force algorithm managed to pack input into 149 bins in  1.9948482513427734 miliseconds.
+Heuristic algorithm managed to pack input into 153 bins in  0.0 miliseconds.
 
 
 RUN NUMBER: 14 THE RESULT IS AS FOLLOWING:
-Given 65 items in U and bins with capacity B of 63
-Brute force algorithm managed to pack input into 31 bins.
-Heuristic algorithm managed to pack input into 33 bins.
+Given 356 items in U and bins with capacity B of 752
+Brute force algorithm managed to pack input into 192 bins in  3.988504409790039 miliseconds.
+Heuristic algorithm managed to pack input into 203 bins in  0.9973049163818359 miliseconds.
 
 
 RUN NUMBER: 15 THE RESULT IS AS FOLLOWING:
-Given 76 items in U and bins with capacity B of 52
-Brute force algorithm managed to pack input into 44 bins.
-Heuristic algorithm managed to pack input into 43 bins.
+Given 928 items in U and bins with capacity B of 966
+Brute force algorithm managed to pack input into 475 bins in  25.958538055419922 miliseconds.
+Heuristic algorithm managed to pack input into 494 bins in  7.9822540283203125 miliseconds.
 
 
 RUN NUMBER: 16 THE RESULT IS AS FOLLOWING:
-Given 66 items in U and bins with capacity B of 83
-Brute force algorithm managed to pack input into 34 bins.
-Heuristic algorithm managed to pack input into 36 bins.
+Given 222 items in U and bins with capacity B of 399
+Brute force algorithm managed to pack input into 115 bins in  1.9905567169189453 miliseconds.
+Heuristic algorithm managed to pack input into 120 bins in  0.0 miliseconds.
 
 
 RUN NUMBER: 17 THE RESULT IS AS FOLLOWING:
-Given 97 items in U and bins with capacity B of 60
-Brute force algorithm managed to pack input into 53 bins.
-Heuristic algorithm managed to pack input into 55 bins.
+Given 978 items in U and bins with capacity B of 665
+Brute force algorithm managed to pack input into 521 bins in  28.920650482177734 miliseconds.
+Heuristic algorithm managed to pack input into 542 bins in  9.947061538696289 miliseconds.
 
 
 RUN NUMBER: 18 THE RESULT IS AS FOLLOWING:
-Given 65 items in U and bins with capacity B of 51
-Brute force algorithm managed to pack input into 38 bins.
-Heuristic algorithm managed to pack input into 39 bins.
+Given 253 items in U and bins with capacity B of 991
+Brute force algorithm managed to pack input into 133 bins in  2.0210742950439453 miliseconds.
+Heuristic algorithm managed to pack input into 139 bins in  0.0 miliseconds.
 
 
 RUN NUMBER: 19 THE RESULT IS AS FOLLOWING:
-Given 78 items in U and bins with capacity B of 53
-Brute force algorithm managed to pack input into 44 bins.
-Heuristic algorithm managed to pack input into 45 bins.
+Given 964 items in U and bins with capacity B of 507
+Brute force algorithm managed to pack input into 494 bins in  28.923749923706055 miliseconds.
+Heuristic algorithm managed to pack input into 514 bins in  8.979320526123047 miliseconds.
 
 
 RUN NUMBER: 20 THE RESULT IS AS FOLLOWING:
-Given 76 items in U and bins with capacity B of 79
-Brute force algorithm managed to pack input into 35 bins.
-Heuristic algorithm managed to pack input into 35 bins.
+Given 687 items in U and bins with capacity B of 774
+Brute force algorithm managed to pack input into 341 bins in  16.95108413696289 miliseconds.
+Heuristic algorithm managed to pack input into 352 bins in  5.9566497802734375 miliseconds.
 
 
+In terms of achieving optimal number of bins; on average, brute force algorithm was % 4 more efficient than heuristic algorithm.
+In terms of achieving optimal time to execute the algorithm; on average, heuristics algorithm was % 63 more efficient than brute force algorithm.

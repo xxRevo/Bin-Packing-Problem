@@ -2,6 +2,8 @@ import random
 import copy
 import sys
 import time
+import statistics
+import matplotlib.pyplot as plt
 
 #brute force algorithm
 def brute_force_algorithm(B,U_initial):
@@ -27,9 +29,12 @@ def brute_force_algorithm(B,U_initial):
     elapsed_time = (time.time() - start_time) * 1000
     return (len(k)),elapsed_time
 
+#heuristic algorithm
 def heuristic_algorithm(B,U_initial):
     start_time = time.time()
     U = U_initial.copy()
+    if (len(U) == 0):
+        return 0,0
     k = []
     k.append(B)
     while(len(U) != 0):
@@ -53,8 +58,8 @@ def random_input_generator(n,B):
         U.append(random.randint(1,B))
     return U
 
-#implementation of brute force algorithm
-
+#implementation of the algorithms
+"""
 sys.stdout = open('output.txt', 'w')
 run_number = 20
 division_number = run_number
@@ -83,3 +88,60 @@ time_efficiency = int((str(time_difference).split(".")[1])[:2])
 print("In terms of achieving optimal number of bins; on average, brute force algorithm was %",bin_efficiency,"more efficient than heuristic algorithm.")
 print("In terms of achieving optimal time to execute the algorithm; on average, heuristics algorithm was %",time_efficiency,"more efficient than brute force algorithm.")
 sys.stdout.close()
+"""
+
+"""
+#performance testing
+input_size=[]
+runtime=[]
+z_value = 1.645 
+for y in range(100,10001,100):
+    run_number = 20
+    current_runtime_collection = []
+    for x in range(run_number):
+        B = 100
+        n = y
+        U_initial = random_input_generator(n,B)
+        h_result_bin, h_result_time = heuristic_algorithm(B,U_initial)
+        current_runtime_collection.append(h_result_time)
+        if x == run_number-1:
+            mean = statistics.mean(current_runtime_collection)
+            stdev = statistics.stdev(current_runtime_collection)
+            confidence_interval = (z_value * stdev) / (run_number ** 0.5)
+            if (confidence_interval / mean) < 0.1:
+                input_size.append(y)
+                runtime.append(mean)
+            else:
+                run_number = run_number + 1
+
+plt.plot(input_size, runtime, marker='o', linestyle='-', color='b')
+
+# Set the labels and title
+plt.xlabel('Input Size')
+plt.ylabel('Runtime (ms)')
+plt.title('Input Size vs Runtime')
+
+# Display the graph
+plt.show()
+"""
+
+""""
+#functional testing
+sys.stdout = open('output_functional_testing.txt', 'w')
+B = 1000
+U_initial = [1,5,2,9,20]
+h_result_bin, h_result_time = heuristic_algorithm(B,U_initial)
+print("Test Case 1: All items can fit into 1 bin. Expected Result: 1")
+print("Heuristic algorithm managed to pack input into", h_result_bin ,"bins.")
+B = 1
+U_initial = [1]
+h_result_bin, h_result_time = heuristic_algorithm(B,U_initial)
+print("Test Case 2: Only 1 item with size equal to capacity. Expected Result: 1 ")
+print("Heuristic algorithm managed to pack input into", h_result_bin, "bins.")
+B = 1
+U_initial = []
+h_result_bin, h_result_time = heuristic_algorithm(B,U_initial)
+print("Test Case 3: No items to be binned. Expected Result: 0")
+print("Heuristic algorithm managed to pack input into", h_result_bin, "bins.")
+sys.stdout.close()
+"""

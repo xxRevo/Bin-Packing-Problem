@@ -1,0 +1,6 @@
+Test Case 1: All items can fit into 1 bin. Expected Result: 1
+Heuristic algorithm managed to pack input into 1 bins.
+Test Case 2: Only 1 item with size equal to capacity. Expected Result: 1 
+Heuristic algorithm managed to pack input into 1 bins.
+Test Case 3: No items to be binned. Expected Result: 0
+Heuristic algorithm managed to pack input into 0 bins.

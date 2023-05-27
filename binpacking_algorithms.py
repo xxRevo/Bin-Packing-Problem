@@ -58,7 +58,7 @@ def random_input_generator(n,B):
         U.append(random.randint(1,B))
     return U
 
-#implementation of the algorithms
+#RUN THIS PART FOR BRUTE FORCE & HEURISTIC ALGORITHM COMPARISON IN TERMS OF RUNTIME AND CORRECTNESS
 """
 sys.stdout = open('output.txt', 'w')
 run_number = 20
@@ -90,8 +90,8 @@ print("In terms of achieving optimal time to execute the algorithm; on average, 
 sys.stdout.close()
 """
 
+#RUN THIS PART FOR PERFORMANCE TESTING
 """
-#performance testing
 input_size=[]
 runtime=[]
 z_value = 1.645 
@@ -115,18 +115,14 @@ for y in range(100,10001,100):
                 run_number = run_number + 1
 
 plt.plot(input_size, runtime, marker='o', linestyle='-', color='b')
-
-# Set the labels and title
 plt.xlabel('Input Size')
 plt.ylabel('Runtime (ms)')
 plt.title('Input Size vs Runtime')
-
-# Display the graph
 plt.show()
 """
 
-""""
-#functional testing
+#RUN THIS PART FOR CORRECTNESS TESTING
+"""
 sys.stdout = open('output_functional_testing.txt', 'w')
 B = 1000
 U_initial = [1,5,2,9,20]
